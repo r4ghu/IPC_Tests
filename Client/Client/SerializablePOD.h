@@ -1,3 +1,12 @@
+/**
+IPC_Tests v0.1
+SerializablePOD.h
+Purpose: Template class that defines the (de)serialize
+protocols for different standard variables.
+
+@author Sri Malireddi
+@version 0.1 02/07/2018
+*/
 #pragma once
 #include <cstring>
 
@@ -19,6 +28,7 @@ public:
 	}
 };
 
+// Need to do a bit more for char[] variables
 template<>
 size_t SerializablePOD<char*>::serializeSize(char* str) {
 	if (str == NULL) return 0;
