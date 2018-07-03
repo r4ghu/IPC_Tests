@@ -10,7 +10,7 @@ public:
 
 	static char* serialize(char* target, T value) {
 		memcpy(target, &value, serializeSize(value));
-		return target + serializeSize(value); // TODO: Might try void
+		return target + serializeSize(value);
 	}
 
 	static const char* deserialize(const char* source, T& target) {
