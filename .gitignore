@@ -263,3 +263,7 @@ __pycache__/
 # Don't ignore OpenCV dll's
 !external/
 !external/bin/
+
+# Don't ignore Client/Server executables
+!Bin/Client.exe
+!Bin/Server.exe
