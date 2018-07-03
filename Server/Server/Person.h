@@ -100,7 +100,7 @@ public:
 		return weight;
 	}
 
-	float getID() {
+	int getID() {
 		return ID;
 	}
 
